@@ -13,5 +13,6 @@ To test the model, use:
   * change the directory to "codes"
   * run "python train.py -opt options/test/train_ESRGAN_1.yml"
 
+Further information can be requested from the authors.
 
 
