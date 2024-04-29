@@ -7,11 +7,11 @@ Sample dataset is given in "datasets" folder
 
 To train the model:
   * change the directory to "codes"
-  * run "python train.py -opt options/train/train_ESRGAN_1.yml"
+  * run "python train.py -opt options/train/train_template_1.yml"
 
 To test the model, use: 
   * change the directory to "codes"
-  * run "python train.py -opt options/test/train_ESRGAN_1.yml"
+  * run "python train.py -opt options/test/test_ESRGAN_1.yml"
 
 Further information can be requested from the authors.
 
