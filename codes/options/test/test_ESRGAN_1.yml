@@ -20,7 +20,7 @@ datasets:
     name: seta
     mode: LR
     #dataroot_HR: '../test1/HR'
-    dataroot_LR: '../datasets/val/lr1_noise'
+    dataroot_LR: '../datasets/test'
   # test_2: # the 2nd test dataset
   #   name: setb
   #   mode: LR
@@ -28,8 +28,9 @@ datasets:
   #   dataroot_LR: '../test2/LR'
 
 path:
-  root: 'C:/Users/z3533297/Priya/SR Project/victorca25/BasicSR-master'
-  pretrain_model_G: '../experiments/debug_001_template/models/latest_G.pth'
+  # root: 'C:/Users/z3533297/Priya/SR Project/victorca25/BasicSR-master'
+  root: '../'
+  pretrain_model_G: '../pretrained_models/pvESRGAN_G.pth'
 
 network_G:
   # ESRGAN
