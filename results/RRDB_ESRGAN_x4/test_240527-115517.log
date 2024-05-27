@@ -1,0 +1,46 @@
+24-05-27 11:55:17.525 - INFO:   name: RRDB_ESRGAN_x4
+  suffix: _ESRGAN
+  model: srragan
+  scale: 4
+  gpu_ids: [0]
+  datasets:[
+    test:[
+      name: seta
+      mode: LR
+      dataroot_LR: ../datasets/test
+      phase: test
+      scale: 4
+      data_type: img
+    ]
+  ]
+  path:[
+    root: ..
+    pretrain_model_G: ../pretrained_models/pvESRGAN_G.pth
+    results_root: ../results/RRDB_ESRGAN_x4
+    log: ../results/RRDB_ESRGAN_x4
+  ]
+  network_G:[
+    which_model_G: RRDB_net
+    norm_type: None
+    mode: CNA
+    nf: 64
+    nb: 23
+    nr: 3
+    in_nc: 3
+    out_nc: 3
+    gc: 32
+    group: 1
+    scale: 4
+  ]
+  is_train: False
+
+24-05-27 11:55:17.527 - INFO: Dataset [LRDataset - seta] is created.
+24-05-27 11:55:17.528 - INFO: Number of test images in [seta]: 2
+24-05-27 11:55:17.544 - INFO: AMP library available
+24-05-27 11:55:18.818 - INFO: Loading pretrained model for G [../pretrained_models/pvESRGAN_G.pth] ...
+24-05-27 11:55:19.430 - INFO: Network G structure: DataParallel - RRDBNet, with parameters: 16,697,987
+24-05-27 11:55:19.430 - INFO: Model [SRRaGANModel] is created.
+24-05-27 11:55:19.430 - INFO: 
+Testing [seta]...
+24-05-27 11:55:21.981 - INFO: 43-R1_75_20230530T143524_PL-avg_lr
+24-05-27 11:55:22.798 - INFO: baboon

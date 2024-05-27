@@ -1,6 +1,9 @@
 import argparse
 import logging
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "1" 
+os.environ["WORLD_SIZE"] = "1"
+import torch
 import time
 
 import torch

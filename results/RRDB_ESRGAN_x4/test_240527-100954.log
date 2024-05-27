@@ -1,0 +1,39 @@
+24-05-27 10:09:54.450 - INFO:   name: RRDB_ESRGAN_x4
+  suffix: _ESRGAN
+  model: srragan
+  scale: 4
+  gpu_ids: [0]
+  datasets:[
+    test:[
+      name: seta
+      mode: LR
+      dataroot_LR: ../datasets/test
+      phase: test
+      scale: 4
+      data_type: img
+    ]
+  ]
+  path:[
+    root: ..
+    pretrain_model_G: ../pretrained_models/pvESRGAN_G.pth
+    results_root: ../results/RRDB_ESRGAN_x4
+    log: ../results/RRDB_ESRGAN_x4
+  ]
+  network_G:[
+    which_model_G: RRDB_net
+    norm_type: None
+    mode: CNA
+    nf: 64
+    nb: 23
+    nr: 3
+    in_nc: 3
+    out_nc: 3
+    gc: 32
+    group: 1
+    scale: 4
+  ]
+  is_train: False
+
+24-05-27 10:09:54.461 - INFO: Dataset [LRDataset - seta] is created.
+24-05-27 10:09:54.462 - INFO: Number of test images in [seta]: 2
+24-05-27 10:09:54.619 - INFO: AMP library available
